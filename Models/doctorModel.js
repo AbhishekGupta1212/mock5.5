@@ -13,6 +13,6 @@ const docSchema=mongoose.Schema({
     versionKey:false
 })
 
-const docModel=mongoose.model('Posts',docSchema)
+const docModel=mongoose.model('Doctors',docSchema)
 
 module.exports={docModel}
