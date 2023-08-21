@@ -4,6 +4,7 @@ const {connection}=require('./db')
 const {userRouter}=require('./Controllers/userRoute')
 const {docRouter}=require("./Controllers/docRoute")
 app.use(express.json())
+app.use(cors)
 app.use('/doctors',docRouter)
 app.use('/user',userRouter)
 
